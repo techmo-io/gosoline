@@ -81,7 +81,7 @@ func (s *updaterService) EnsureRecentExchangeRates(ctx context.Context) error {
 			return err
 		}
 
-		s.logger.Infof("currency: %s, rate: %f", rate.Currency, rate.Rate)
+		s.logger.Info("currency: %s, rate: %f", rate.Currency, rate.Rate)
 	}
 
 	newTime := time.Now()
